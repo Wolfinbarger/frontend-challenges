@@ -2,11 +2,20 @@ html {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: auto;
+}
+
+.footer {
+  width: 100%;
+  margin-top: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  text-wrap: wrap;
 }
 
 .card {
-  margin: auto;
+  margin: 25% auto;
   height: 500px;
   width: 300px;
   padding: 10px;
@@ -20,5 +29,36 @@ html {
   width: 90%;
   margin: 10px auto;
   object-fit: contain;
-  border-radius: 16px;
+  border-radius: 8px;
+}
+
+.card__content {
+  margin: 40px auto;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.card__description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: gray;
+}
+
+@media (orientation: landscape) {
+  .card {
+    margin: 10% auto;
+    height: 300px;
+    width: 150px;
+  }
+
+  .card__title {
+    font-size: 0.8rem;
+  }
+
+  .card__description {
+    font-size: 0.6rem;
+  }
 }
